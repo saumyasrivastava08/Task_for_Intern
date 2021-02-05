@@ -83,7 +83,7 @@ class App extends Component {
 		
 			</h3>
 			<div>
-				<input type="file" onChange={this.onFileChange} />
+				<input type="file" onChange={e=>this.setState(e.target.file[0])} />
 				<button onClick={this.onFileUpload}>
 				Upload!
 				</button>
